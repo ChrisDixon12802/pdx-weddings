@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Italianno", cursive;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+section {
+  padding: 100px;
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+header .navigation {
+  display: flex;
+  position: relative;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+header .navigation li a:hover {
+  color: #9966cc;
+}
+
+p {
+  font-weight: 400px;
+  color: #000000;
+}
+
+.banner {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(0, 0, 0, 0.5)),
+    url(https://www.venuereport.com/media/cache/resolve/venue_roundup_single_image_flex/uploads/+0Regular_Roundup/OregonGuide/RoxyannWeddings-OliviaLeigh.jpg);
+  background-size: cover;
+}
+
+.content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 5em;
+  color: #000000;
+}
+
+.content p {
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1.4em;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #9966cc;
+}
+
+.team {
+  padding: 80px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+.team-member {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+}
+.team-member img {
+  width: 200px;
+  height: auto;
+  border-radius: 1px;
+  object-fit: cover;
+}
+
+.team-member .box {
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.9);
+  background: #ffffff;
+}
+
+.team-member .box .imgbx {
+  width: 100%;
+  height: 300px;
+}
+
+.team-member .box h3 {
+  font-size: 1.8em;
+  color: #000000;
+  margin: 10px 0;
+}
+.team-member .box p {
+  font-size: 1.4em;
+  color: #000000;
+}
+
+.imgbx img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img {
+  width: 100%;
+  min-height: 300px;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+footer .social-media {
+  text-align: center;
+  padding: 1px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -100px;
+}
+footer .copy {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.9em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -10px;
+}
+
+.bottom {
+  margin-top: 120px;
+}
+
+.reasons {
+  padding: 80px;
+}
+
+.reasons .h2 {
+  font-size: 3em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reason-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px;
+}
+
+.reason-list li {
+  list-style: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 1.4em;
+}
+.reason-item h3 {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.reason-item p {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.testimonials {
+  padding: 80px;
+  margin-bottom: -40px;
+  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(0, 0, 0, 0.5)),
+    url(https://www.hertz.com/content/dam/hertz/global/blog-articles/places-to-go/6-beautiful-spots-to-see-in-portland-oregon/View-of-Portland-Oregon-fall.jpg);
+  background-size: cover;
+}
+.testimonials .h2 {
+  font-size: 6em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  max-width: 100%;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: column;
+  color: #000000;
+  font-size: 1.5em;
+}
+
+.testimonial .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.about {
+  padding: 80px;
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(0, 0, 0, 0.5)),
+    url("https://i.pinimg.com/originals/f7/52/02/f75202144238cd69bb390c5f92a9b95a.jpg");
+  background-size: cover;
+}
+
+.us p {
+  font-size: 2em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titletext {
+  font-size: 4em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mission {
+  padding: 80px;
+}
+
+.mission .h2 {
+  font-size: 3em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.mission p {
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mission-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.mission-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 420px;
+}
+
+.mission-image img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mission-image .box {
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.9);
+  background: #000000;
+}
+.mission-image .box .imgbx {
+  width: 100%;
+  height: 200px;
+}
+
+.mission-image:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.events {
+  padding: 80px;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(0, 0, 0, 0.5)),
+    url("https://cdn0.weddingwire.com/vendor/674544/3_2/960/jpg/hawedding-501_51_445476-169816371316845.jpeg");
+  background-size: cover;
+}
+.events .h2 {
+  font-size: 3em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 35px;
+}
+.event-item {
+  flex: 1 1 30%;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  background: #ffffff;
+}
+.event-item .event-title {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.event-item .event-date {
+  font-size: 1.2em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.event-item .event-description {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.bookings {
+  padding: 80px;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(0, 0, 0, 0.5)),
+    url("https://www.blackbutteranch.com/wp-content/uploads/2021/10/Outdoor-Wedding-Venues-Oregon-3.jpg");
+  background-size: cover;
+}
+.bookings h2 {
+  font-size: 3em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bookings p {
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.booking-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  padding: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  background: #ffffff;
+}
+
+.booking-title {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.description {
+  font-size: 4em;
+  color: #000000;
+  text-align: center;
+}
+
+.contactus {
+  padding: 80px;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.507), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.wallpapersafari.com/27/2/rUCJ3b.jpg");
+  background-size: cover;
+}
+.contactus .h2 {
+  font-size: 3em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactus p {
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.inputbox,
+.inputbox-btn {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
+  gap: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  padding: 1px;
+  border-radius: 4px;
+}
+.inputbox input,
+.inputbox textarea {
+  padding: 10px;
+  font-size: 1.5em;
+  border: 1px solid #00000000;
+  border-radius: 4px;
+}
+
+.inputbox button {
+  padding: 10px;
+  font-size: 1.2em;
+  color: #000000;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.send {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #000000;
+}
